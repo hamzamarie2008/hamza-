@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>عن المنتجع - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header img {
+            height: 60px; 
+        }
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .nav-links a {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        h2 {
+            color: #2d3e50;
+            font-size: 1.8em;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 60%;
+            max-height: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .view-btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .view-btn:hover {
+            background-color: #e67e22;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        /* تصميم ريسپونسف */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header img {
+                margin-top: 10px;
+                height: 50px;
+            }
+            nav {
+                padding: 10px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                text-align: right;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .nav-links a {
+                margin: 10px 0;
+            }
+            nav.open .nav-links {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>عن المنتجع</h1>
+        <img src="img/شعار.png" alt="شعار المنتجع"> 
+    </header>
+
+    <nav>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+            <a href="الملاعب.html">الملاعب</a>
+            <a href="التدريبات.html">التدريب</a>
+            <a href="الحزم.html">الحزم</a>
+            <a href="عن المنتجع.html">عن المنتجع</a>
+            <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+            <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+            <a href="من نحن.html">من نحن</a>
+            <a href="المرافق.html">المرافق</a>
+            <a href="خريطة الموقع.html">خريطة الموقع</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>متجر للمحترفين</h2>
+        <p>عد متجر "إن ون" للجولف وجهة مثالية لعشاق رياضة الجولف، حيث يوفر مجموعة متنوعة من الأدوات والمعدات عالية الجودة التي تلبي احتياجات المحترفين والهواة على حد سواء.</p>
+        
+        <div class="image-container">
+            <img src="img/miles-of-golf-ann-arbor.jpg" alt="صورة ملعب الجولف">
+        </div>
+
+        <!-- زر التنقل أسفل الصورة -->
+        <a class="view-btn" href="الاستفسار او الحجز.html">شراء المنتجات</a>
+
+    </div>
+
+    <footer>
+        <p>&copy;  منتجع هول إن ون للجولف. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav').classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>

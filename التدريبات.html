@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المرافق - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.8em;
+            color: white;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            transition: max-height 0.3s ease-in-out;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            padding: 40px 20px;
+        }
+        h2 {
+            color: #2d3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: square;
+            display: inline-block;
+            text-align: right;
+            padding: 0;
+            margin: 0 auto 20px auto;
+        }
+        .images-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .images-container figure {
+            text-align: center;
+            max-width: 300px;
+            flex: 1;
+        }
+        .images-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .images-container figcaption {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        /* عند الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+                flex-direction: row;
+            }
+
+            .logo {
+                max-width: 80px;
+            }
+
+            header h1 {
+                font-size: 2em;
+                flex-grow: 1;
+            }
+
+            nav {
+                display: none; /
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                padding: 0;
+            }
+
+            nav.open {
+                display: flex; 
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .images-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hamburger {
+                display: block; 
+                position: absolute;
+                left: 20px; 
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+        
+        <h1>التدريبات</h1>
+        <img src="img/شعار.png" alt="شعار المنتجع" class="logo"> 
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+        <a href="الملاعب.html">الملاعب</a>
+        <a href="التدريبات.html">التدريب</a>
+        <a href="الحزم.html">الحزم</a>
+        <a href="عن المنتجع.html">عن المنتجع</a>
+        <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+        <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+        <a href="من نحن.html">من نحن</a>
+        <a href="المرافق.html">المرافق</a>
+        <a href="خريطة الموقع.html">خريطة الموقع </a>
+    </nav>
+
+    <div class="container">
+        <h2>التدريب</h2>
+        <ul>
+            <li>يوجد لدينا نوادٍ للتدريبات</li>
+        </ul>
+    
+        <div class="images-container">
+            <figure>
+                <img src="img/تدريب 1.png" alt="نادي الجولف الأول">
+                <figcaption>الصورة الأولى: نادي الجولف الأول، بيئة مثالية لمحبي الجولف مع مرافق تدريب عالية الجودة.</figcaption>
+                <a class="book-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+            </figure>
+
+            <figure>
+                <img src="img/تدريب 2.png" alt="منطقة التدريب الليلية">
+                <figcaption>الصورة الثانية: منطقة التدريب الليلية، توفر تجربة تدريب رائعة مع إضاءة مثالية.</figcaption>
+                <a class="book-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;  منتجع هول إن ون للجولف. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+
+        function toggleNav() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

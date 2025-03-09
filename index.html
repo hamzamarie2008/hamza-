@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="منتجع إن ون للجولف يقدم تجربة فريدة لعشاق الجولف مع ملاعب عالمية وخدمات مميزة.">
+    <title>منتجع هول إن ون للجولف</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: right;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 100px; 
+            height: auto;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nav-links li {
+            margin: 10px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px;
+            display: block;
+        }
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+        .container {
+            width: 90%;
+            margin: 40px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+        }
+        .image-container {
+            width: 40%;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .text-container {
+            width: 55%;
+            font-size: 1.2em;
+            color: #555;
+            font-weight: bold;
+            line-height: 1.8;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #34495e;
+                position: absolute;
+                width: 100%;
+                top: 50px;
+                left: 0;
+                text-align: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .image-container, .text-container {
+                width: 100%;
+            }
+            .text-container {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/شعار.png" alt="شعار المنتجع" class="logo">
+        <h1>منتجع إن ون للجولف</h1>
+        <p>منتجع فاخر يقدم تجربة استثنائية للجولف والخدمات المميزة</p>
+    </header>
+    <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="الاستفسار او الحجز.html">الاستفسار والحجز</a></li>
+            <li><a href="الملاعب.html">الملاعب</a></li>
+            <li><a href="التدريبات.html">التدريب</a></li>
+            <li><a href="الحزم.html">الحزم</a></li>
+            <li><a href="عن المنتجع.html">عن المنتجع</a></li>
+            <li><a href="متجر للمحترفين.html">متجر للمحترفين</a></li>
+            <li><a href="المطاعم والفنادق.html">المطاعم والفنادق</a></li>
+            <li><a href="من نحن.html">من نحن</a></li>
+            <li><a href="المرافق.html">المرافق</a></li>
+            <li><a href="خريطة الموقع.html">خريطة الموقع</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="image-container">
+            <img src="img/فندق.jpg" alt="منتجع الجولف الفاخر">
+        </div>
+        <div class="text-container">
+            <p>🏌️‍♂️ مرحبًا بك في منتجع هول إن ون للجولف استمتع بأفضل ملاعب الجولف المصممة على مستوى عالمي، مع خدمات فاخرة ومرافق استثنائية.</p>
+            <p>🌟 سواء كنت لاعبًا محترفًا أو هاويًا، ستجد في منتجعنا كل ما تحتاجه لقضاء وقت ممتع ومميز.</p>
+            <p>⛳ احجز تجربتك اليوم واستمتع بأجواء الطبيعة الخلابة والخدمات الراقية</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;  منتجع هول إن ون للجولف. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المرافق - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            direction: rtl;
+            text-align: center;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header img {
+            height: 60px; 
+        }
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .nav-links a {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .text-content {
+            padding-bottom: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .image-gallery figure {
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery figcaption {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Media query for mobile screens */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header img {
+                margin-top: 10px;
+                height: 50px;
+            }
+            nav {
+                padding: 10px;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links a {
+                margin: 10px 0;
+            }
+            .menu-icon {
+                display: block;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>الملاعب والتدريبات</h1>
+        <img src="img/شعار.png" alt="شعار المنتجع"> 
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+            <a href="الملاعب.html">الملاعب</a>
+            <a href="التدريبات.html">التدريب</a>
+            <a href="الحزم.html">الحزم</a>
+            <a href="عن المنتجع.html">عن المنتجع</a>
+            <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+            <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+            <a href="من نحن.html">من نحن</a>
+            <a href="المرافق.html">المرافق</a>
+            <a href="خريطة الموقع.html">خريطة الموقع </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text-content">
+            <h2>الملاعب</h2>
+            <ul>
+                <li>ثلاثة ملاعب لبطولات الجولف بما في ذلك ملعب "سي فيو" الشهير</li>
+            </ul>
+        </div>
+        <div class="image-gallery">
+            <figure>
+                <img src="img/ملعب 1.jpg" alt="صورة ملعب 1">
+                <figcaption>الملعب الأول: ملعب الجولف 1 "يُعرف ملعب الجولف الأول بتصميمه الرائع وإطلالاته الخلابة."</figcaption>
+                <div>
+                    <a class="view-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="img/ملعب 2.jpg" alt="صورة ملعب 2">
+                <figcaption>الملعب الثاني: ملعب الجولف 2 "هذا الملعب يبرز بتحدياته المبتكرة التي تجذب عشاق الإثارة."</figcaption>
+                <div>
+                    <a class="view-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="img/ملعب 3.jpg" alt="صورة ملعب 3">
+                <figcaption>الملعب الثالث: ملعب الجولف 3 "تجربة فريدة لا تُنسى مع مناظره البانورامية المدهشة."</figcaption>
+                <div>
+                    <a class="view-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;  منتجع هول إن ون للجولف. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.nav-links');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

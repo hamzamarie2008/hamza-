@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الحزم - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            direction: rtl; 
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            padding: 60px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        header img {
+            height: 100px;
+            position: absolute;
+            right: 20px;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        h2, h3 {
+            color: #2d3e50;
+            font-size: 1.8em;
+            text-align: right; 
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: right; 
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            text-align: right; 
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: right; 
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        form {
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+            color: #2d3e50;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #3498db;
+        }
+
+
+        .hamburger {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+
+            nav a {
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/شعار.png" alt="شعار المنتجع"> 
+        <h1>الحزم</h1>
+    </header>
+    <nav id="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+        <a href="الملاعب.html">الملاعب</a>
+        <a href="التدريبات.html">التدريب</a>
+        <a href="الحزم.html">الحزم</a>
+        <a href="عن المنتجع.html">عن المنتجع</a>
+        <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+        <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+        <a href="من نحن.html">من نحن</a>
+        <a href="المرافق.html">المرافق</a>
+        <a href="خريطة الموقع.html">خريطة الموقع </a>
+    </nav>
+
+
+    <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+
+    <div class="container">
+        <h2>حزم الإقامة والجولف</h2>
+        <h3>خمس جولات</h3>
+        <ul>
+            <li>إقامة كاملة لمدة خمس ليال في جناح فاخر</li>
+            <li>خمس جولات - 18 حفرة</li>
+            <li>جولة واحدة مضمونة في ملعب "سي فيو" الشهير</li>
+            <li>جلسة تدريب رقمية مجانية</li>
+        </ul>
+        <h3>الجولة الثلاثية</h3>
+        <ul>
+            <li>إقامة لمدة ليلتين في غرفة مزدوجة مع وجبة الإفطار</li>
+            <li>ثلاث جولات - 18 حفرة</li>
+            <li>تأجير مجاني للعربات</li>
+        </ul>
+        <h3>استراحة استجمام</h3>
+        <ul>
+            <li>إقامة لليلة واحدة مع وجبة إفطار كاملة</li>
+            <li>تناول العشاء في أي من مطاعم المنتجع</li>
+            <li>الوصول إلى الملاعب (باستثناء ملعب "سي فيو")</li>
+            <li>تأجير نادي مجاني</li>
+        </ul>
+        <p>تتوفر حزم مخصصة للفعاليات المؤسسية والإقامات الطويلة. يُرجى الاتصال بالشركة للحصول على المزيد من التفاصيل.</p>
+    </div>
+
+    <footer>
+        <p>&copy;  منتجع هول إن ون للجولف. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+
+        function toggleNav() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

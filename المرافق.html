@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المرافق - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            direction: rtl; 
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+            text-align: left; 
+        }
+        h2, h3 {
+            color: #2d3e50;
+            font-size: 1.8em;
+            text-align: right; 
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: right; 
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            text-align: right; 
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        form {
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+            color: #2d3e50;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #3498db;
+        }
+
+        /* إضافة إعدادات للـ navbar لجعلها متجاوبة */
+        .hamburger {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                background-color: #34495e;
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            nav a {
+                text-align: center;
+                padding: 15px;
+                width: 100%;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>المرافق</h1>
+    </header>
+    <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+
+    <nav id="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+        <a href="الملاعب.html">الملاعب</a>
+        <a href="التدريبات.html">التدريب</a>
+        <a href="الحزم.html">الحزم</a>
+        <a href="عن المنتجع.html">عن المنتجع</a>
+        <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+        <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+        <a href="من نحن.html">من نحن</a>
+        <a href="المرافق.html">المرافق</a>
+        <a href="خريطة الموقع.html">خريطة الموقع </a>
+    </nav>
+
+    <div class="container">
+        <h2>المرافق</h2>
+        <ul>
+            <li>ثلاثة ملاعب لبطولات الجولف بما في ذلك ملعب "سي فيو" الشهير</li>
+            <li>ناديان</li>
+            <li>الإقامة في الفنادق</li>
+            <li>المطاعم والمقاهي</li>
+            <li>متجر للمحترفين</li>
+            <li>ساحة تدريب مُضاءة بالأنوار الكشَّافة</li>
+            <li>دروس الجولف</li>
+            <li>التدريب الرقمي</li>
+            <li>خدمة المساعدة على حمل أدوات الجولف</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 منتجع هول إن ون للجولف. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // دالة لتبديل حالة قائمة التنقل
+        function toggleNav() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

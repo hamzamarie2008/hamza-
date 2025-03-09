@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المطاعم والفنادق - منتجع هول إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+        }
+        header img {
+            height: 60px;
+            position: absolute;
+            left: unset; 
+            right: 20px; /
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end; 
+            flex-grow: 1;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 120px;
+        }
+        h2, h3 {
+            color: #2d3e50;
+            font-size: 1.8em;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .images-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+        }
+        .images-container div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .images-container img {
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .book-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: white;
+            background-color: #f39c12;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .booking-btn:hover {
+            background-color: #e67e22;
+        }
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            left: 20px; 
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                background-color: #34495e;
+            }
+
+            nav.open {
+                display: flex;
+            }
+
+            nav a {
+                text-align: center;
+                padding: 15px;
+                width: 100%;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>المطاعم والفنادق</h1>
+
+        <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+        <img src="img/شعار.png" alt="شعار المنتجع">
+    </header>
+
+    <nav id="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+        <a href="الملاعب.html">الملاعب</a>
+        <a href="التدريبات.html">التدريب</a>
+        <a href="الحزم.html">الحزم</a>
+        <a href="عن المنتجع.html">عن المنتجع</a>
+        <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+        <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+        <a href="من نحن.html">من نحن</a>
+        <a href="المرافق.html">المرافق</a>
+        <a href="خريطة الموقع.html">خريطة الموقع</a>
+    </nav>
+
+    <div class="container">
+        <h2>المطاعم و المقاهي</h2>
+        <p>استمتع بتجربة الإقامة بالفنادق وتجربة الطعام الرائعة في منتجع هول إن ون، حيث نقدم مجموعة متنوعة من المطاعم والمقاهي والفنادق المختلفة التي تناسب جميع الأذواق.</p>
+    </div>
+
+    <div class="images-container">
+        <div>
+            <img src="img/فندق.jpg" alt="فندق">
+            <a class="book-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+        </div>
+        <div>
+            <img src="img/مطعم.jpg" alt="مطعم">
+            <a class="book-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; منتجع هول إن ون للجولف. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navbar').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
